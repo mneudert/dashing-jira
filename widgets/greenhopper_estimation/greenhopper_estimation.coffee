@@ -1,0 +1,1 @@
+class Dashing.Greenhopper_Estimation extends Dashing.Widget

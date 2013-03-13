@@ -1,0 +1,39 @@
+// ----------------------------------------------------------------------------
+// Widget-greenhopper-estimation styles
+// ----------------------------------------------------------------------------
+.widget-greenhopper-estimation {
+  background-color: white;
+
+  .title {
+    color: black;
+  }
+
+  li {
+    border-radius: 8px;
+    float: left;
+    list-style-type: none;
+    margin-left: 5%;
+    padding: 6px;
+    text-align: center;
+    width: 25%;
+  }
+
+  li:first-child {
+    margin-left: 1%;
+  }
+
+  .not_started {
+    background-color: red;
+    color: #fff;
+  }
+
+  .in_progress {
+    background-color: yellow;
+    color: #222;
+  }
+
+  .done {
+    background-color: green;
+    color: #fff;
+  }
+}
