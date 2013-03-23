@@ -45,15 +45,9 @@ if session['name'] == 'JSESSIONID'
         issue_value = issue['estimateStatistic']['statFieldValue']['value'].to_i
 
         case issue['statusName']
-        when 'Planned'
-          not_started += issue_value
-        when 'Ready for Testing'
+        when 'Planned', 'Ready for Testing', 'In Progress'
           in_progress += issue_value
-        when 'In Progress'
-          in_progress += issue_value
-        when 'Closed'
-          done += issue_value
-        when 'Resolved'
+        when 'Closed', 'Resolved'
           done += issue_value
         else
           p('UNMATCHABLE ISSUE:', issue)
